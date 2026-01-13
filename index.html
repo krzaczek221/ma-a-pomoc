@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini pomoc komputerowa</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #e0e0e0;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    padding: 70px 20px;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 25px #000;
+}
+
+header h1 {
+    margin-bottom: 15px;
+    font-size: 48px;
+    color: #00e6ff;
+    text-shadow: 0 0 15px #00e6ff;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ===== NAV ===== */
+nav {
+    text-align: center;
+    padding: 20px;
+    background: #0b0b0b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #00e6ff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #00e6ff;
+}
+
+/* ===== CIEKAWOSTKI / TIPS ===== */
+.tips-section {
+    padding: 70px 40px;
+    background: rgba(15,32,39,0.85);
+    border-radius: 12px;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.tips-section h2 {
+    text-align: center;
+    color: #00e6ff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.tip-card {
+    background: linear-gradient(145deg, #0f2027, #2c5364);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #00e6ff;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #00bcd4;
+}
+
+.tip-card h3 {
+    color: #00e6ff;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.tip-card p {
+    font-size: 15px;
+}
+
+/* ===== CARDS / OKIENKA ===== */
+section.cards-section {
+    padding: 70px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.card {
+    background: rgba(0,0,0,0.65);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 18px #000;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px #00e6ff;
+}
+
+.card h2 {
+    color: #00e6ff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #00e6ff;
+    color: #000;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #00bcd4;
+}
+
+/* ===== KONTAKT ===== */
+.contact {
+    padding: 70px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #111, #1b2b34);
+    margin-top: 50px;
+}
+
+.contact h2 {
+    color: #00e6ff;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.contact a {
+    color: #00e6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #00bcd4;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #000;
+    color: #aaa;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Mała pomoc</h1>
+    <p>Nie wiesz jakiego anty-virusa wybrać? Problemy z optymalizacją albo internetem? Tu znajdziesz odpowiedzi 👇</p>
+</header>
+
+<nav>
+    <a href="#tips">Ciekawostki</a>
+    <a href="#cards">Przydatne linki</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<!-- CIEKAWOSTKI -->
+<section class="tips-section" id="tips">
+    <h2>Ciekawostki i porady</h2>
+    <div class="tips">
+        <div class="tip-card">
+            <h3>💡 Tip #1</h3>
+            <p>Regularne aktualizacje systemu przyspieszają komputer i zwiększają bezpieczeństwo.</p>
+        </div>
+        <div class="tip-card">
+            <h3>⚡ Tip #2</h3>
+            <p>Wyczyść cache przeglądarki, żeby zmniejszyć opóźnienia i szybciej ładować strony.</p>
+        </div>
+        <div class="tip-card">
+            <h3>🔥 Tip #3</h3>
+            <p>Sprawdź temperaturę podzespołów – przegrzewanie może powodować spowolnienia.</p>
+        </div>
+        <div class="tip-card">
+            <h3>⌨️ Tip #4</h3>
+            <p>Proste skróty klawiszowe zwiększają produktywność i ułatwiają pracę.</p>
+        </div>
+    </div>
+</section>
+
+<!-- OKIENKA / CARDS -->
+<section class="cards-section" id="cards">
+    <div class="card" id="internet">
+        <h2>Internet & Wi-Fi</h2>
+        <p>Lag, zrywanie połączenia, słaby ping.</p>
+        <a class="btn" href="https://www.speedtest.net" target="_blank">Sprawdź prędkość</a>
+    </div>
+
+    <div class="card" id="security">
+        <h2>Wirusy & Bezpieczeństwo</h2>
+        <p>Antywirusy, podejrzane pliki, ochrona danych.</p>
+        <a class="btn" href="https://www.av-test.org" target="_blank">Testy antywirusów</a>
+    </div>
+
+    <div class="card" id="optymalizacja">
+        <h2>Optymalizacja PC</h2>
+        <p>Problem z systemem Windows?</p>
+        <p>    kliknij tutaj 👇</p>
+        <a class="btn" href="https://support.microsoft.com/pl-pl/windows" target="_blank">Pomoc techniczna</a>
+    </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="contact" id="contact">
+    <h2>Kontakt</h2>
+    <p>
+        Masz pytanie? Kliknij, aby skopiować e-mail: 
+        <span id="email" style="color:#00e6ff; font-weight:bold; cursor:pointer;">jakub.lesny.2024i@zszwolsztyn.net</span>
+    </p>
+    <p id="copiedMessage" style="color:#00bcd4; margin-top:10px; display:none;">Skopiowano e-mail!</p>
+</section>
+
+<footer>
+    Mała pomoc dla was od Michała.J, Pawła.K, Filipa.P, Jakuba.L 💻🔥
+</footer>
+
+<script>
+const emailEl = document.getElementById("email");
+const copiedMessage = document.getElementById("copiedMessage");
+
+emailEl.addEventListener("click", () => {
+    navigator.clipboard.writeText(emailEl.textContent).then(() => {
+        copiedMessage.style.display = "block";
+        setTimeout(() => copiedMessage.style.display = "none", 2000);
+    }).catch(err => {
+        alert("Nie udało się skopiować e-maila.");
+        console.error(err);
+    });
+});
+</script>
+
+</body>
+</html>
